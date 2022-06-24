@@ -12,12 +12,13 @@
 #
 
 ### Pseudocode
-# create a method -> calculate_sum
+# create a method -> calculate_sum, accepts "numbers" parameter
 # define a variable that will keep track of the current sum
 #  -> set that variable to 0 initially
 # use an each loop to go through every number in the array
 #  -> add each number to the current sum
 # after completing the loop, return the sum
+#
 
 def calculate_sum(numbers)
   sum = 0

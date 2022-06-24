@@ -13,12 +13,13 @@
 #
 
 ### Pseudocode
-# create a method -> less_than_100
+# create a method -> less_than_100, accepts "numbers" parameter
 # define an empty array variable for storing numbers less than 100
 # use an each loop to go through every number in the array
 #  -> add any number less than 100 to the output array
 #  -> less than 100 will be evaluated using an 'if' statement
 # after completing the loop, return the output array
+#
 
 def less_than_100(numbers)
   nums_less_than_100 = []
