@@ -3,7 +3,7 @@
 # that contains all numbers from the original array that are less than 100.
 #
 # Input -> array
-# Output -> array (with less contents than original area)
+# Output -> array (smaller than original array)
 #
 # Input: [99, 101, 88, 4, 2000, 50]
 # Output: [99, 88, 4, 50]
