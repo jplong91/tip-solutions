@@ -1,6 +1,9 @@
 ### Question
 # Write a function that returns the sum of all numbers in a given array. 
 # 
+# Input -> array
+# Output -> integer
+#
 # Input: [1, 2, 3, 4]
 # Output: 10
 #
@@ -35,5 +38,5 @@ def calculate_sum_ii(numbers)
   numbers.sum
 end
 
-p calculate_sum([1, 2, 3, 4]) #=> 10
-p calculate_sum([5, -2, 10, -8, 4]) #=> 9
+p calculate_sum_ii([1, 2, 3, 4]) #=> 10
+p calculate_sum_ii([5, -2, 10, -8, 4]) #=> 9
