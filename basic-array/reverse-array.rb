@@ -20,7 +20,7 @@
 # create an index and set it equal to the input array length, minus 1
 #  -> this will start us off on the last number of the input array
 # start the while loop, it goes as long as index is greater than _or equal to_ 0
-#  -> add the current index's value to the reversed array
+#  -> shovel the current index's value to the reversed array
 #  -> decrement the index by 1
 #
 # once the loop is complete, return the reversed array
