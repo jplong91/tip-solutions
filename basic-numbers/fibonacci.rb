@@ -59,8 +59,6 @@ p fibonacci(3) #=> 1
 p fibonacci(1) #=> 0
 
 ### Final form
-
-def fizzbuzz_ii(n)
-
-end
-
+# This is another problem where we could probably trim off a few lines,
+# but in terms of runtime and efficency, this is about it!
+#
