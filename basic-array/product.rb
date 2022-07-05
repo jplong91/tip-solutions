@@ -1,4 +1,5 @@
 ### Question
+#
 # Write a function that accepts an array of numbers
 # and returns the product of all the numbers.
 #
@@ -19,11 +20,14 @@
 #
 
 ### Pseudocode
+#
 # create a method -> gimme_product, accepts "numbers" parameter
 # create "product" variable, set it initially to `1`
-# iterate through numbers input array using `each` loop
+#
+# `each` loop to iterate through numbers array
 #  -> multiply and set the "product" variable by each number inside the loop
-# once the loop completes, return the product
+#
+# return the product
 #
 
 def gimme_product(numbers)

@@ -1,4 +1,5 @@
 ### Question
+#
 # Given two strings of equal length, write a function that returns
 # the number of characters that are different between the two strings.
 #
@@ -16,6 +17,7 @@
 #
 
 ### Pseudocode
+#
 # create a method -> hamming, accepts two parameters, "string1" and "string2"
 # create an integer variable "diff_count" and set it equal to 0
 # 
@@ -27,7 +29,7 @@
 # inside the loop, if `string1[index] == string2[index]`, we do nothing and continue
 # otherwise, increment our `diff_count` by one
 #
-# once the loop is complete, `return diff_count`
+# return diff_count
 #
 
 def hamming(string1, string2)
@@ -49,6 +51,7 @@ p hamming("ABCDEFG", "ABCXEOG") #=> 2
 p hamming("ABCDEFG", "ABCDEFG") #=> 0
 
 ### Final form
+#
 # TIL for me in here, as I hadn't used "argument unpacking" in this way before
 # I'm even a little fuzzy on the details of how this works, but ruby is smart enough
 # to hold onto parameters it is expecting each step of this method chain

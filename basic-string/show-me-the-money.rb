@@ -1,4 +1,5 @@
 ### Question
+#
 # Given a string, write a function that returns true
 # if the “$” character is contained within the string or false if it is not.
 #
@@ -13,6 +14,7 @@
 #
 
 ### Pseudocode
+#
 # create a method -> is_there_money?, accepts "input_string" parameter
 # 
 # `each_char` loop

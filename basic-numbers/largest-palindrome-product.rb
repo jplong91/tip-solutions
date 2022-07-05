@@ -1,4 +1,5 @@
 ### Question
+#
 # A palindromic number reads the same both ways.
 # The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
 #
@@ -9,12 +10,13 @@
 #
 
 ### Pseudocode
+#
 # create a method -> largest_palindrome
 # had to think about this one a little while, this is not straightforward or easy
 #
 # first hurdle -> is there a way to do this that does not use a nested loop?
 # we sort of need to run through all sorts of three digit iterations
-# I can't think of a good way to shortcut checking products for palindromes and against
+# can't think of a good way to shortcut checking products for palindromes and against
 #  other palindromes we find
 #
 # second hurdle is figuring out a way to check if an integer value is a palindrome
@@ -64,6 +66,7 @@ end
 p largest_palindrome #=> 906609
 
 ### Final form (WARNING: this leads to a long-ish side tangent hunting for performance gainz)
+#
 # One of my thoughts was if we could start on the higher end of numbers and perhaps
 #  early break on the loop
 # Even just early breaking the inner loop would save time. This code is noticeably slow as-is

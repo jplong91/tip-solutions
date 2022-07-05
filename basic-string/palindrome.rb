@@ -1,4 +1,5 @@
 ### Question
+#
 # Given a string, write a function that returns true if it is a palindrome,
 # and false if it is not.
 # (A palindrome is a word that reads the same both forward and backward.)
@@ -14,9 +15,10 @@
 #
 
 ### Pseudocode
+#
 # create a method -> is_palindrome?, accepts "input_string" parameter
 # 
-# think I'm going to use a while loop with two indices
+# think I'm going to use a `while` loop with two indices
 #  -> a "start_index" which is initially set to 0
 #  -> and an "end_index" which is initially set to `input_string.length - 1`
 # this loop will run for as long as end_index >= start_index

@@ -1,4 +1,5 @@
 ### Question
+#
 # The Collatz Conjecture or 3x+1 problem can be summarized as follows:
 #  - Take any positive integer n.
 #  - If n is even, divide n by 2 to get n / 2.
@@ -19,6 +20,7 @@
 #
 
 ### Pseudocode
+#
 # create a method -> collatz, accepts "number" parameter
 # this already feels very similar to previous questions - fizzbuzz + multiples
 #
@@ -32,7 +34,7 @@
 #  -> else, set number equal to number x3 + 1
 #  -> increment the step variable by 1 each iteration of the loop
 #
-# once the loop finishes, return 'steps'
+# return steps variable (integer)
 #
 
 def collatz(number)
@@ -57,10 +59,12 @@ p collatz(53) #=> 11
 p collatz(1) #=> 0
 
 ### Final form
+#
 # This is like an un-final form, not pretty at all. =(
 # But I wanted to try out recursion because it seemed doable with this problem...
 # The challenging part about that was keeping track of a 'steps' variable,
 #  so this sort of needed to be in a class to use an ivar.
+#
 
 class Collatz
   attr_accessor :steps

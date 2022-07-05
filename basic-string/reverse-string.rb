@@ -1,4 +1,5 @@
 ### Question
+#
 # Write a function that returns the reverse of a given string.
 #
 # Input -> string
@@ -12,6 +13,7 @@
 #
 
 ### Pseudocode
+#
 # the solution is nearly identical to 'reverse-array'
 #
 # create a method -> reverse_string, accepts "input_string" parameter

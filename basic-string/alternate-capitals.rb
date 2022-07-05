@@ -1,4 +1,5 @@
 ### Question
+#
 # Given a string, write a function that returns a copy of the original string
 # that has every other character capitalized.
 # (Capitalization should begin with the second character.)
@@ -14,6 +15,7 @@
 #
 
 ### Pseudocode
+#
 # create a method -> with_alternate_capitals, accepts "input_string" parameter
 # create an empty "output_string", string variable
 # 
@@ -26,7 +28,7 @@
 #  -> if true, capitalize the letter and shovel it into the output string
 #  -> if not true, just shovel the letter into the output string, no capitalization
 #
-# once the loop is complete, return the output string
+# return the output string
 #
 
 def with_alternate_capitals(input_string)
@@ -49,7 +51,9 @@ end
 p with_alternate_capitals("hello, how are your porcupines today?") #=> "hElLo, HoW ArE YoUr pOrCuPiNeS ToDaY?"
 
 ### Final form - something cleaner than this may exist
+#
 # DM me if you locate some Ruby magic that shaves off any of the method chaining!
+#
 
 def with_alternate_capitals_ii(input_string)
   input_string.chars.map.with_index do |char, index|

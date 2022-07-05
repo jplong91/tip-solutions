@@ -1,4 +1,5 @@
 ### Question
+#
 # If we list all the natural numbers below 10 that are
 # multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 #
@@ -8,6 +9,7 @@
 #
 
 ### Pseudocode
+#
 # create a method -> find_3_5_multiples, accepts "n" parameter
 #
 # there's several ways to accomplish this one, my strategy will use two separate loops
@@ -22,7 +24,7 @@
 #  -> they both run for as long as their respective indices are below "n"
 #  -> inside the loop, we add the "index" to the array, then increment the index by 3 or 5 respectively
 #
-# once the loops complete, add the sums of both the "threes_array" and the "fives_array"
+# once the loops complete, return the sum of sums from the "threes_array" and the "fives_array"
 #
 
 def find_3_5_multiples(n)
@@ -48,6 +50,7 @@ p find_3_5_multiples(10) #=> 23
 p find_3_5_multiples(1000) #=> 266333
 
 ### Final form
+#
 # In a way, the above format is 2*O(n), but it's also not? We skip over several numbers
 # with each index increment
 #

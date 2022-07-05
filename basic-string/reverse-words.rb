@@ -1,4 +1,5 @@
 ### Question
+#
 # Given a string of words, write a function that returns a new string
 # that contains the words in reverse order.
 #
@@ -10,6 +11,7 @@
 #
 
 ### Pseudocode
+#
 # create a method -> reverse_words!, accepts "input_string" parameter
 # any way I crack this, we need a `.split(" ")` on the input string, to get the whole words
 #  -> this will be saved to a "words_array" variable

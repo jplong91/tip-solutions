@@ -1,4 +1,5 @@
 ### Question
+#
 # Write a function that returns whether a given number is a prime number.
 #
 # NOTE: A prime number is a whole number, greater than 1, whose only factors are 1 and itself
@@ -17,6 +18,7 @@
 #
 
 ### Pseudocode
+#
 # (this one took me a little while to think about, not a straightforward answer)
 # create a method -> is_prime?, accepts a "number" parameter
 # 
@@ -50,8 +52,9 @@ p is_prime?(7) #=> true
 p is_prime?(99) #=> false
 
 ### Final form
-# without doing any research, I'm semi-confident there is a more mathematically efficient way
+#
+# Without doing any research, I'm semi-confident there is a more mathematically efficient way
 # to do this. that said, this solution is still O(n) runtime which is fine enough
 # 
-# very open to more exciting solutions if you find them!
+# Very open to more exciting solutions if you find them!
 #

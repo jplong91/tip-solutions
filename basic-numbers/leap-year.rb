@@ -1,4 +1,5 @@
 ### Question
+#
 # Given a year, report if it is a leap year.
 #
 # The tricky thing here is that a leap year in the Gregorian calendar occurs:
@@ -26,6 +27,7 @@
 #
 
 ### Pseudocode
+#
 # create a method -> is_leap_year?, accepts "year" parameter
 # my brain is yelling at me that this problem solution will look a lot like "FIZZBUZZ"
 #
@@ -54,6 +56,7 @@ p is_leap_year?(1900) #=> false
 p is_leap_year?(2000) #=> true
 
 ### Final form
+#
 # Similar to fizzbuzz, this could be a case statement
 #
 

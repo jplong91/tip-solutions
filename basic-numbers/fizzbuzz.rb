@@ -1,4 +1,5 @@
 ### Question
+#
 # Write a function that prints out every number from 1 to N, with the following exceptions:
 #
 # If the number is divisible by 3, print out "FIZZ".
@@ -12,6 +13,7 @@
 #
 
 ### Pseudocode
+#
 # create a method -> fizzbuzz, accepts "n" parameter
 # 
 # will go with a while loops since doing `while index <= n` is easy enough to write in
@@ -48,7 +50,8 @@ fizzbuzz(33) #=> N/A
 fizzbuzz(102) #=> N/A
 
 ### Final form
-# this is mostly to show off that a case statement is a viable option here
+#
+# this is mostly to show that a case statement is a viable option here
 # you will more frequently find case statements as an alternative to if/else statements
 # that use more than 0-2+ elsif's
 #

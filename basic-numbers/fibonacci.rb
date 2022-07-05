@@ -1,4 +1,5 @@
 ### Question
+#
 # Write a function that gives the Nth number of the Fibonacci Sequence.
 # The Fibonacci sequence begins with 0 and 1, and every number thereafter
 # is the sum of the previous two numbers.
@@ -20,6 +21,7 @@
 #
 
 ### Pseudocode
+#
 # create a method -> fibonacci, accepts "n" parameter
 # create three variables:
 #  -> "current_num" variable that is initially set to 0
@@ -34,7 +36,7 @@
 #  -> renew "next_num" to equal "new_sum"
 #  -> each iteration we increment "fib_num" by 1
 #
-# once the loop is complete, return "current_num"
+# return current_num
 #
 
 def fibonacci(n)
@@ -59,6 +61,7 @@ p fibonacci(3) #=> 1
 p fibonacci(1) #=> 0
 
 ### Final form
+#
 # This is another problem where we could probably trim off a few lines,
 # but in terms of runtime and efficency, this is about it!
 #

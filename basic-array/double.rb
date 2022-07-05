@@ -1,4 +1,5 @@
 ### Question
+#
 # Given an array of numbers, write a function that returns
 # a new array whose values are the original array’s value doubled.
 #
@@ -10,9 +11,12 @@
 #
 
 ### Pseudocode
+#
 # create a method -> double_it, accepts "numbers" parameter
+#
 # use a `map` method to map
 #  -> iterate over each number in the input array, and double it inside the map
+#
 # return the mapped array (use implicit return)
 #
 

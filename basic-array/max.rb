@@ -1,4 +1,5 @@
 ### Question
+#
 # Write a function that returns the greatest value from an array of numbers.
 #
 # Input -> array
@@ -13,11 +14,14 @@
 #
 
 ### Pseudocode
+#
 # create a method -> to_the_max, accepts "numbers" parameter
 # create a variable to keep track of the current greatest value
 #  -> set this variable equal to the first number in the array (0 doesn't work with all negatives)
-# each loop to iterate over numbers array
+#
+# `each` loop to iterate over numbers array
 #  -> if statement: check if the number being evaluated is greater than the current greatest value
+#
 # once loop is finished, return the greatest value variable
 #
 

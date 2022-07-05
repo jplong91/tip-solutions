@@ -1,4 +1,5 @@
 ### Question
+#
 # Given an array, write a function that returns
 # an array that contains the original array’s values in reverse.
 #
@@ -13,17 +14,18 @@
 #
 
 ### Pseudocode
+#
 # create a method -> reverse_reverse, accepts "input_array" parameter
 # create an empty "reversed_array", array variable
-# 
-# `each` won't easily work, we need a `while` loop for this one
 # create an index and set it equal to the input array length, minus 1
 #  -> this will start us off on the last number of the input array
+# 
+# `each` won't easily work, we need a `while` loop for this one
 # start the while loop, it goes as long as index is greater than _or equal to_ 0
 #  -> shovel the current index's value to the reversed array
 #  -> decrement the index by 1
 #
-# once the loop is complete, return the reversed array
+# return the reversed array
 #
 
 def reverse_reverse(input_array)

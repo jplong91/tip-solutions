@@ -1,4 +1,5 @@
 ### Question
+#
 # Given a string, write a function that returns the first occurence of
 # two duplicate characters in a row, and return the duplicated character.
 #
@@ -16,6 +17,7 @@
 #
 
 ### Pseudocode
+#
 # create a method -> first_duplicate_finder, accepts "input_string" parameter
 # create a "previous_char" string variable and set it to ""
 # 
@@ -47,6 +49,8 @@ p first_duplicate_finder("abcde  oooop") #=> " "
 p first_duplicate_finder("abcde") #=> nil
 
 ### Final form =(
+#
 # A cleaner way to accomplish this doesn't come to mind right away
 # There is another alternative solution using a `while` loop but the end result looks about the same
 # As always, if you find a squeaky clean, working solution that you're excited about, DM me!
+#

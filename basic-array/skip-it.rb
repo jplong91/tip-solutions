@@ -1,4 +1,5 @@
 ### Question
+#
 # Given an array of numbers, write a function that returns a new array
 # in which only select numbers from the original array are included,
 # based on the following details:
@@ -25,6 +26,7 @@
 #
 
 ### Pseudocode
+#
 # create a method -> skip_it, accepts "numbers" parameter
 # create an empty "output", array variable
 # 
@@ -39,7 +41,7 @@
 #  -> decrement the skipdex by 1
 #  -> increment the index by 1 each iteration of the loop
 #
-# once the loop is complete, return the output
+# return the output
 #
 
 def skip_it(numbers)
