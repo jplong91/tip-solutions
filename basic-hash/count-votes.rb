@@ -6,7 +6,19 @@
 # Input -> array (of strings)
 # Output -> hash
 #
-# Input: ["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]
+# Input: [
+#   "Dewey",
+#   "Truman",
+#   "Dewey",
+#   "Dewey",
+#   "Truman",
+#   "Truman",
+#   "Dewey",
+#   "Truman",
+#   "Truman",
+#   "Dewey",
+#   "Dewey"
+# ]
 # Output: { "Dewey" => 6, "Truman" => 5 }
 #
 
