@@ -1,4 +1,5 @@
 ### Question
+# https://leetcode.com/problems/roman-to-integer/
 #
 # Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M
 #
@@ -60,7 +61,7 @@
 # loop through the numerals string (maybe `.split`)
 #  -> each numeral we'll check against the hashmap, add the hashmap value to the running total
 #
-# 'IV', 'I' (always check the numeral at the next index), if it's a 'V', 'X' -> add the negative of the hashmap value from the total
+# 'IV', 'I' (always check the numeral at the next index), if it's a 'V', 'X' -> add the negative of the hashmap value to the total
 #   ^       (current total is -1)
 #   +5       (current total is 4)
 #   -> next iteration of the loop, 'V', read from the hashmap and add it's value
@@ -91,12 +92,12 @@ class RomanNumeralConverter
     numerals_array = numerals.chars
 
     numerals_array.each_with_index do |numeral, index|
-      integer_value = NUMERAL_TO_INTEGER_MAP[numeral]
+      numeral_value = NUMERAL_TO_INTEGER_MAP[numeral]
 
-      if numeral_checker(numeral, numerals_array[index + 1])
-        output_integer -= integer_value
+      if in_sequence?(numeral, numerals_array[index + 1])
+        output_integer -= numeral_value
       else
-        output_integer += integer_value
+        output_integer += numeral_value
       end
     end
 
@@ -105,7 +106,7 @@ class RomanNumeralConverter
 
   private
 
-  def numeral_checker(numeral, next_numeral)
+  def in_sequence?(numeral, next_numeral)
     numeral == 'I' && (next_numeral == 'V' || next_numeral == 'X') ||
     numeral == 'X' && (next_numeral == 'L' || next_numeral == 'C') ||
     numeral == 'C' && (next_numeral == 'D' || next_numeral == 'M')
