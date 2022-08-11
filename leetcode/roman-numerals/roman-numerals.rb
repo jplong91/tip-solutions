@@ -71,12 +71,6 @@
 
 class RomanNumeralConverter
   NUMERAL_TO_INTEGER_MAP = {
-    'IV' => 4,
-    'IX' => 9,
-    'XL' => 40,
-    'XC' => 90,
-    'CD' => 450,
-    'CM' => 950,
     'I' => 1,
     'V' => 5,
     'X' => 10,
