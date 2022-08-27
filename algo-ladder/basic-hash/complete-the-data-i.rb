@@ -31,7 +31,7 @@
 ### Pseudocode
 #
 # create a method -> complete_the_data, accepts a "posts" input array
-# create an variable for the key-map called "users"
+# create a variable for the key-map called "users"
 # create an empty array for the output called "adjusted_posts"
 #
 # `each` loop since we need to modify every element in 'posts'

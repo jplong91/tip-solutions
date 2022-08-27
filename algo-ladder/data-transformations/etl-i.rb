@@ -20,7 +20,7 @@
 ### Pseudocode
 #
 # create a method -> etl, accepts input array and number parameters
-# create an variable "output_hash" variable
+# create an "output_hash" variable
 #
 # `each` loop through the array
 #  -> create new key-value pair in the hash, loop element is the key, number is the value
@@ -38,11 +38,13 @@ def etl(input_array, number)
   return output_hash
 end
 
-input_posts = 
-
 p etl(["a", "e", "i", "o", "u"], 1) #=> see expected output above
 
 ### Final Form
+#
+# You might notice a lot of these final forms involve a shortcut when initializing
+#  an "output" array/hash/etc. If you find yourself creating a variable just for
+#  the output of data, there's probably a streamlined way to do it!
 #
 
 def etl_ii(input_array, number)
