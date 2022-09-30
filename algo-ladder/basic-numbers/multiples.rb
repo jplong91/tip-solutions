@@ -26,6 +26,11 @@
 #
 # once the loops complete, return the sum of sums from the "threes_array" and the "fives_array"
 #
+# LATE EDIT: it was revealed to me that this strategy counts multiples of 3 and 5 TWICE, which is a correct callout
+#             to correct for this, in the 5s loop we won't add the number if it's divisible by 3!
+#
+# SIDE NOTE: sometimes I read 'unless' out loud as "if not", or "as long as... then don't"
+#
 
 def find_3_5_multiples(n)
   threes_index = 3
@@ -39,7 +44,10 @@ def find_3_5_multiples(n)
   end
 
   while fives_index < n
-    fives_array << fives_index
+    unless fives_index % 3 == 0
+      fives_array << fives_index
+    end
+
     fives_index += 5
   end
 
@@ -47,7 +55,7 @@ def find_3_5_multiples(n)
 end
 
 p find_3_5_multiples(10) #=> 23
-p find_3_5_multiples(1000) #=> 266333
+p find_3_5_multiples(1000) #=> 233168
 
 ### Final form
 #
@@ -69,19 +77,22 @@ def find_3_5_multiples_ii(n)
   fives_index = 5
   all_multiples = []
 
-  while threes_index < n
-    all_multiples << threes_index
+  while threes_index < n || fives_index < n
+    if fives_index > threes_index
+      all_multiples << threes_index
 
-    if threes_index > fives_index
-      all_multiples << fives_index
+      threes_index += 3
+    else
+      unless fives_index % 3 == 0
+        all_multiples << fives_index
+      end
+
       fives_index += 5
     end
-
-    threes_index += 3
   end
 
   return all_multiples.sum
 end
 
 p find_3_5_multiples_ii(10) #=> 23
-p find_3_5_multiples_ii(1000) #=> 266333
+p find_3_5_multiples_ii(1000) #=> 233168
